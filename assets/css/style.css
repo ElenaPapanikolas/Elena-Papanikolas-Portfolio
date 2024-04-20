@@ -1,0 +1,42 @@
+img {
+    height: 400px;
+   
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+
+nav {
+    width: 33%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    list-style-type: none;
+    
+}
+
+li {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border: solid;
+    padding: 2px;
+    background-color: greenyellow;
+}
+
+h2 {
+    width: 33%;
+    font-size: 200%;
+}
