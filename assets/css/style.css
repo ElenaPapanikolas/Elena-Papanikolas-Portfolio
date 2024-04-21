@@ -8,7 +8,7 @@ header {
     width: 100%;
     justify-content: space-between;
     background-color: black;
-    color: white;
+    color: rgb(248, 6, 204);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
 }
@@ -39,4 +39,25 @@ a {
 h2 {
     width: 33%;
     font-size: 200%;
+}
+
+main {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    line-height: 1.5;
+    
+}
+
+h3 {
+    color: rgb(0, 207, 253);
+    padding: 10px;
+}
+
+
+footer {
+    
+    background-color: black;
+    color: rgb(248, 6, 204);
+    padding: 20px;
 }
