@@ -14,6 +14,10 @@ N/A
 
 By using the navigation bar at the top, you can click each link and you will be directed to the corresponding section further down the page. When you click on each image, you will be directed to the deployed webpage of my work. Currently, I only have the first image linked to actual work. I will be updating as my journey progresses. At the bottom of the page, if you click each link, you will be directed to the corresponding ways to contact me.
 
+[Click here](https://elenapapanikolas.github.io/Elena-Papanikolas-Portfolio/) for deployed application.
+
+!["Screenshot of application"](./assets/images/screenshot.png)
+
 ## Credits
 Image by <a href="https://pixabay.com/users/carolannbussieres-15285551/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4914197">Carol-Ann Bussières</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4914197">Pixabay</a> 
 -Jellyfish Picture
