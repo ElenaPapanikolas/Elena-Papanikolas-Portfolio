@@ -1,17 +1,30 @@
-header img {
-    height: 200px;
+/* Pseudo-class for declaring variables */  
+:root {
+    --hovers: rgb(240, 5, 146);
+    --main-background: black;
+    --main-color: rgb(0, 207, 253);
 }
 
 header {
     display: flex;
     width: 100%;
-    background-color: black;
-    color: rgb(0, 207, 253);
+    background-color: var( --main-background);
+    color: var(--main-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
     border-bottom: 5px solid;
 }
 
+header img {
+    height: 200px;
+}
+
+h1 {
+    font-size: 300%;
+
+}
+
+/* Applies to name and nav links */
 .header-info {
     display: flex;
     justify-content: space-between;
@@ -32,20 +45,27 @@ li {
     display: flex;
 }
 
+/* Applies to nav bar and contact links */
 li a {
     text-decoration: none;
     color: black;
     border: solid;
     padding: 5px;
-    background-color: rgb(0, 207, 253);
+    background-color: var(--main-color);
 }
 
-h2 {
-    font-size: 200%;
+/* Applies to hover styling for nav bar and contact links */
+li a:hover {
+    background-color: var(--hovers);
+}
+
+/* Applies to hover styling for work images */
+a img:hover {
+    border: solid 3px var(--hovers);
 }
 
 main {
-    background-color: black;
+    background-color: var( --main-background);
     color: whitesmoke;
     padding: 20px;
     line-height: 1.5;
@@ -56,6 +76,7 @@ main {
 section {
     display: flex;
     padding: 10px;
+    margin-bottom: 5%;
 }
 
 section p {
@@ -68,28 +89,7 @@ section ul {
     justify-content: space-between;
 }
 
-.contact-info {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-h3 {
-    color: rgb(0, 207, 253);
-    padding: 10px;
-    font-size: 250%;
-    flex: 0 0 20%;
-}
-
-
-footer {
-    border-top: 5px solid;
-    background-color: black;
-    color: rgb(0, 207, 253);
-    padding: 20px;
-}
-
+/* Positioning for all work section divs */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -109,58 +109,66 @@ footer {
     display: flex;
     width: 50%;
     justify-content: flex-start;
-
 }
 
+/* Applies to the biggest main work image */
 .landing-page img {
     width: 100%;
     height: 500px;
 }
 
-.landing-page p {
-    
-}
-
+/* Applies to the four smaller work images */
 .coming-soon img {
     width: 100%;
     padding: 10px;
 }
 
+/* Applies to all text over images */
 .landing-page p,
 .coming-soon p {
     position: absolute;
-    border: solid rgb(0, 207, 253);
-    background-color: rgb(0, 207, 253);
+    border: solid var(--main-color);
+    background-color: var(--main-color);
     color: black;
     padding: 5px;
 }
 
+.contact-info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/* Applies to each section h2s */
+h2 {
+    color: var(--main-color);
+    padding: 10px;
+    font-size: 250%;
+    flex: 0 0 20%;
+}
+
 footer {
+    border-top: 5px solid;
+    background-color: var( --main-background);
+    color: var(--main-color);
+    padding: 20px;
     display: flex;
     justify-content: center;
+    font-size: 125%;
 }
 
-.about-me-class {
-    margin-bottom: 5%;
-}
-
-.work-class {
-    margin-bottom: 5%;
-}
-
-.contact-me-class {
-    margin-bottom: 5%;
-}
-
-@media screen and (max-width: 992px) {
-
-}
-
+/* Media query, moves nav bar under header, stacks picture into a column when made smaller */
 @media screen and (max-width: 768px) {
     .coming-soon{
         width: 100%;
     }
     nav ul{
         flex-direction: column;
+    }
+    .header-info{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
     }
 }
